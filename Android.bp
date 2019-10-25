@@ -197,10 +197,3 @@ cc_fuzz {
     static_libs: ["libziparchive", "libbase", "libz", "liblog"],
     host_supported: true,
 }
-
-cc_fuzz {
-    name: "libziparchive_fuzzer",
-    srcs: ["libziparchive_fuzzer.cpp"],
-    static_libs: ["libziparchive", "libbase", "libz", "liblog"],
-    host_supported: true,
-}
